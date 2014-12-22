@@ -1,0 +1,19 @@
+To do list
+==========
+
+Music: upload from CD
+List by concerto/sonata/... a la albums
+Photographs in a gallery 
+Timeline linking into pictures and music
+Past news articles + letters to papers
+About The Site page
+Biography (+timeline)
+Obituary links?
+Anthya's book
+Links to commercial recordings and to Youtube
+Downloadable (y)
+Default music on homepage
+
+
+Future stuff:
+possibly rehash of "songs" to be "pieces" has_many "songs"? where each song is a movement and thus a separate track? then you can upload an entire symphony in one go as a single piece with many Song forms nested within it

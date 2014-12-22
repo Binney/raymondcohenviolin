@@ -1,0 +1,12 @@
+<% provide :title, "Edit #{@album.name}" %>
+
+<h1>Editing <%= @album.name %></h1>
+
+<%= form_for @album do |f| %>
+
+	<%= f.label :name %>
+	<%= f.text_field :name %>
+
+	<%= f.submit "Save", class: "btn btn-large btn-primary" %>
+
+<% end %>

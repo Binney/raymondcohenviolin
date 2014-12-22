@@ -1,0 +1,15 @@
+<% provide :title, "Albums" %>
+
+<h1>Albums</h1>
+
+<% if @albums.any? %>
+	
+	<ul class="items">
+		<%= render @albums %>
+	</ul>
+
+<% else %>
+
+	No albums found.
+
+<% end %>

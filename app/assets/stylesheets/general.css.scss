@@ -1,0 +1,113 @@
+@import "bootstrap";
+
+@mixin box_sizing {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* universal */
+/* universal */
+
+html {
+  overflow-y: scroll;
+}
+
+body {
+  padding-top: 60px;
+}
+
+section {
+  overflow: auto;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.center {
+  text-align: center;
+  h1 {
+    margin-bottom: 10px;
+  }
+}
+/*html {
+  overflow-y: scroll;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  background-color: black;
+}*/
+
+/*.container {
+  background-color: black;
+  background-size: 100%;
+  background-position: center bottom;  
+  background-repeat: no-repeat;
+  padding-bottom: 50px;
+  min-height: 100%;
+  min-width: 1200px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 800px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top:50px;
+  margin-left: 100px;
+  margin-right: 100px;
+  position: relative;
+  background-color: #fff;
+}
+
+/*section {
+  overflow: auto;
+}
+
+textarea {
+  resize: vertical;
+  width: 100%;
+}
+
+.center {
+  text-align: center;
+  h1 {
+    margin-bottom: 10px;
+  }
+}*/
+
+#error_explanation {
+  color: #f00;
+  ul {
+    list-style: none;
+    margin: 0 0 18px 0;
+  }
+}
+
+.field_with_errors {
+  @extend .control-group;
+  @extend .error;
+}
+
+#togglebtn {
+  cursor: pointer;
+  font-weight: 600;
+  &:hover {
+    color: #fff;
+  }
+}
+
+/* forms */
+
+input, textarea, select, .uneditable-input {
+  border: 1px solid #bbb;
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+  @include box_sizing;  
+}
+

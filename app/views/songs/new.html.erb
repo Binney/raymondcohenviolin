@@ -1,0 +1,15 @@
+<h1>New music entry</h1>
+
+<%= form_for @song do |f| %>
+<%= render 'shared/error_messages', object: f.object %>
+<div class="field">
+	<%= f.label :title %>
+	<%= f.text_field :title %>
+	
+  <%= f.label :track %><br />
+  <%= f.file_field :track %>
+</div>
+
+<%= f.submit "Save" %>
+
+<% end %>
