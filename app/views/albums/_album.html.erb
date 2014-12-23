@@ -3,6 +3,6 @@
 		<span class="album-name">
 			<%= album.name %>
 		</span>
-		<%= image_tag album.cover_url, size: "150x150", alt: album.name %>
+		<%= image_tag cover_for(album), size: "150x150", alt: album.name %>
 	<% end %>
 </li>

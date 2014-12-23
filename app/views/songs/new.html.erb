@@ -6,8 +6,15 @@
 	<%= f.label :title %>
 	<%= f.text_field :title %>
 	
-  <%= f.label :track %><br />
-  <%= f.file_field :track %>
+	<%= f.label :url %>
+	<%= f.text_field :url %>
+
+	<%= f.label :description %>
+	<%= f.text_area :description %>
+
+	<%= f.label :album_id %>
+	<%= f.text_field :album_id %>
+
 </div>
 
 <%= f.submit "Save" %>

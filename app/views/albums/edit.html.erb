@@ -1,12 +1,24 @@
 <% provide :title, "Edit #{@album.name}" %>
 
-<h1>Editing <%= @album.name %></h1>
+<h1>Edit <%= @album.name %></h1>
 
-<%= form_for @album do |f| %>
+<%= nested_form_for @album do |f| %>
 
 	<%= f.label :name %>
 	<%= f.text_field :name %>
 
-	<%= f.submit "Save", class: "btn btn-large btn-primary" %>
+	<%= f.label :description %>
+	<%= f.text_area :description %>
+
+	<%= f.label :cover_url %>
+	<%= f.text_field :cover_url %>
+
+	<%= f.fields_for :songs do |song_field| %>
+		<%= render 'song_fields', f: song_field %>
+	<% end %>
+
+	<p><%= f.link_to_add "Add a song", :songs %></p>
+
+	<%= f.submit "Create", class: "btn btn-large btn-primary" %>
 
 <% end %>
