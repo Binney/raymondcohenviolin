@@ -1,0 +1,17 @@
+<% provide :title, "Manage Gallery" %>
+
+<h1>Manage Gallery</h1>
+
+<% if @pictures.any? %>
+	
+	<ul class="gallery">
+		<% @pictures.each do |picture| %>
+			<%= render "manage_picture", picture: picture %>
+		<% end %>
+	</ul>
+
+<% else %>
+
+	No pictures found.
+
+<% end %>

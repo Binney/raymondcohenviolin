@@ -1,4 +1,5 @@
 class AlbumsController < ApplicationController
+	before_action :authenticate, only: [:manage, :new, :edit, :destroy]
 
 	def new
 		@album = Album.new
@@ -34,6 +35,16 @@ class AlbumsController < ApplicationController
 		else
 			render 'edit'
 		end
+	end
+
+	def manage
+		@albums = Album.all.paginate(page: params[:page])
+	end
+
+	def destroy
+		Album.destroy(params[:id])
+		flash[:success] = "Album deleted."
+		redirect_to '/music/manage'
 	end
 
 	private

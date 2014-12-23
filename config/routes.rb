@@ -11,4 +11,12 @@ Raymondcohenviolin::Application.routes.draw do
   match "/gallery", to: 'pictures#index', via: 'get'
   match "/music", to: 'albums#index', via: 'get'
 
+  scope "/gallery" do
+  	match "/manage", to: 'pictures#manage', via: 'get'
+  end
+
+  scope "/music" do
+  	match "/manage", to: 'albums#manage', via: 'get'
+  end
+
 end

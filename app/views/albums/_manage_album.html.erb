@@ -1,0 +1,13 @@
+<li class="album-manage">
+	<div class="album-cover">
+	<%= image_tag cover_for(album), width: "150px" %>
+	<b><%= album.name %></b> | 
+	<%= link_to "Edit", edit_album_path(album) %> |
+	<%= link_to "Delete", album, method: :delete, data: { confirm: "Are you sure? All tracks on this album will be deleted!" } %></div>
+	<div class="album-options">
+	<ul class="album-tracklist">
+		<% album.songs.each do |song| %>
+			<%= song.title %><br>
+		<% end %>
+	</ul></div>
+</li>

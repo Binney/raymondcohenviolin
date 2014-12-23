@@ -48,3 +48,21 @@
 	padding-left: 40px;
 	margin-bottom: 50px;
 }
+
+.album-manage {
+	width: 100%;
+}
+
+.album-cover {
+	float: left;
+}
+
+.album-options {
+	float: right;
+}
+
+.album-tracklist {
+	float: left;
+	line-height: 20px;
+	list-style-type: circle;
+}

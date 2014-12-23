@@ -1,4 +1,7 @@
 class PicturesController < ApplicationController
+	before_action :authenticate, only: [:manage, :new, :edit, :destroy]
+	# TODO by the way this DOES allow a malicious user to send POST requests
+	# so do we need to include Create and Update in that?
 
 	def new
 		@picture = Picture.new
@@ -36,10 +39,21 @@ class PicturesController < ApplicationController
 		end
 	end
 
+	def manage
+		@pictures = Picture.all.paginate(page: params[:page])
+	end
+
+	def destroy
+		Picture.destroy(params[:id])
+		flash[:success] = "Picture deleted."
+		redirect_to '/gallery/manage'
+	end
+
 	private
 
 		def picture_params
 			params.require(:picture).permit(:url, :description, :image)
 		end
+
 
 end
