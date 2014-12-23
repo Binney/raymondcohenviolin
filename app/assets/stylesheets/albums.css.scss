@@ -1,3 +1,43 @@
-// Place all the styles related to the Albums controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+/* Albums */
+
+.albums li {
+  list-style:none;
+  display: inline-block;
+  line-height: 150px;
+}
+
+.album_wrapper {
+  position: relative;
+  padding: 30px;
+  display: block;
+  width: 150px;
+  height: 150px;
+  line-height: 30px;
+  text-align: center;
+}
+.album_name {
+  line-height: 30px;
+  display: inline-block;
+  vertical-align: middle;
+  position: absolute;
+  color:#000;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bold;
+  background-color:rgba(255,255,255,0.25);
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  z-index: 30;
+  opacity: 0;
+}.album_name:hover {
+  opacity:1;
+}
+
+.tags_select {
+  list-style-type: none;
+  display: inline;
+  -moz-column-count: 3;
+  -webkit-column-count: 3;
+  column-count: 3;
+}

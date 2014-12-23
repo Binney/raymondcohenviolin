@@ -1,0 +1,15 @@
+<% provide :title, "Gallery" %>
+
+<h1>Gallery</h1>
+
+<% if @pictures.any? %>
+	
+	<ul class="gallery">
+		<%= render @pictures %>
+	</ul>
+
+<% else %>
+
+	No pictures found.
+
+<% end %>

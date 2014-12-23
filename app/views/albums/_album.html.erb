@@ -1,0 +1,8 @@
+<li class="album album-wrapper">
+	<%= link_to album do %>
+		<span class="album-name">
+			<%= album.name %>
+		</span>
+		<%= image_tag album.cover_url, size: "150x150", alt: album.name %>
+	<% end %>
+</li>

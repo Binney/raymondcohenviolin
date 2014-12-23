@@ -1,6 +1,14 @@
 To do list
 ==========
 
+Add Paperclip upload to music and pictures
+Add a fancier music player?
+Add image gallery fanciness
+Ensure the whole thing works on a tablet/mobile
+
+Brief
+=====
+
 Music: upload from CD
 List by concerto/sonata/... a la albums
 Photographs in a gallery 
@@ -15,5 +23,3 @@ Downloadable (y)
 Default music on homepage
 
 
-Future stuff:
-possibly rehash of "songs" to be "pieces" has_many "songs"? where each song is a movement and thus a separate track? then you can upload an entire symphony in one go as a single piece with many Song forms nested within it
