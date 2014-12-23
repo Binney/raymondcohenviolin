@@ -4,6 +4,9 @@
 
 <%= form_for @picture do |f| %>
 
+	<%= f.label :avatar %><br />
+	<%= f.file_field :avatar %>
+
 	<%= f.label :url, "Location" %>
 	<%= f.text_field :url %>
 
