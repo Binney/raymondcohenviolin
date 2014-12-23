@@ -2,6 +2,8 @@
 
 <h1>Manage Gallery</h1>
 
+<%= link_to "Add a picture", new_picture_path, method: 'get', class: "btn btn-large btn-primary" %>
+
 <% if @pictures.any? %>
 	
 	<ul class="gallery">

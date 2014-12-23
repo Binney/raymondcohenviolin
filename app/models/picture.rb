@@ -5,6 +5,6 @@ class Picture < ActiveRecord::Base
   		bucket: "binneybucket",
   		s3_credentials: "#{Rails.root}/config/s3.yml"
 
-    validates_attachment_content_type :image, :content_type => /\Aimage\/.*\Z/
+    validates_attachment_content_type :image, content_type: /\Aimage\/.*\Z/
 
 end

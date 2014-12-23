@@ -1,4 +1,4 @@
 <% provide :title, "A picture of Raymond Cohen" %>
 
-<%= image_tag image_url_for(@picture), alt: "Image" %>
+<%= image_tag @picture.image.url, alt: "Image" %>
 <p><%= @picture.description %></p>
