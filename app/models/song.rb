@@ -6,8 +6,9 @@ class Song < ActiveRecord::Base
 		path: ":attachment/:id/:style.:extension",
   		bucket: "binneybucket",
   		s3_credentials: "#{Rails.root}/config/s3.yml"
-	validates_attachment :track, content_type: { content_type: ["audio/mpeg3", "audio/x-mpeg-3", "audio/x-m4a", "video/mp4", "audio/mpeg"] }
-
+	#validates_attachment :track, content_type: { content_type: ["audio/mp3", "audio/x-mpeg-3", "audio/x-m4a", "video/mp4", "audio/mpeg"] }
+	do_not_validate_attachment_file_type :track
+	
 	belongs_to :album
 
 end
