@@ -1,11 +1,32 @@
 <% provide :title, "Home" %>
 
-<div class="center hero-unit"><h1>Raymond Cohen 1919-2011</h1></div>
+<%= render 'layouts/player' %>
+
+<div class="container">
 
 <p>This is the homepage of Raymond Cohen's website.<br>
 
 Welcome! This site is very much still a work in progress. If you're interested in the project do <%= link_to "contact us", contact_path %>.</p>
 
-<%= button_to "Music", music_path, class: "btn btn-large btn-primary", method: 'get' %>
-<%= button_to "Biography", biography_path, class: "btn btn-large btn-primary", method: 'get' %>
-<%= button_to "Gallery", gallery_path, class: "btn btn-large btn-primary", method: 'get' %>
+<div class="row">
+
+	<div class="col-md-4">
+		<%= link_to "Life", biography_path %><br>
+		<p>edfg edf rdfvgb fvb njhg rfgh jhgf def hbgf df ss</p>
+	</div>
+
+	<div class="col-md-4">
+		<%= link_to "Music", music_path %><br>
+		<p>edfg edf rdfvgb fvb njhg rfgh jhgf def hbgf df ss</p>
+
+	</div>
+
+	<div class="col-md-4">
+		<%= link_to "Gallery", gallery_path %><br>
+		<p>edfg edf rdfvgb fvb njhg rfgh jhgf def hbgf df ss</p>
+
+	</div>
+
+</div>
+
+</div>

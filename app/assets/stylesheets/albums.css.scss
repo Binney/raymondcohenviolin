@@ -1,12 +1,15 @@
+@import "typography.css.scss";
+
 /* Albums */
 
 .albums li {
   list-style:none;
-  display: inline-block;
-  line-height: 150px;
+  border-bottom: 1px solid $burgundy;
+  /*display: inline-block;
+  line-height: 150px;*/
 }
 
-.album_wrapper {
+/*.album_wrapper {
   position: relative;
   padding: 30px;
   display: block;
@@ -65,4 +68,4 @@
 	float: left;
 	line-height: 20px;
 	list-style-type: circle;
-}
+}*/

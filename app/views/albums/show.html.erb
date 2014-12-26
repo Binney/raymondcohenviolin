@@ -1,7 +1,5 @@
 <% provide :title, @album.name %>
 
-<h1><%= @album.name %></h1>
-
 <% if @album.songs.any? %>
 	<ul class="songs">
 		<%= render @album.songs %>

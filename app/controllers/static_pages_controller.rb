@@ -1,6 +1,8 @@
 class StaticPagesController < ApplicationController
 
 	def home
+		@homepage = true
+		@disable_container = true
 	end
 
 	def about

@@ -1,7 +1,5 @@
 <% provide :title, "Edit #{@album.name}" %>
 
-<h1>Edit <%= @album.name %></h1>
-
 <%= nested_form_for @album do |f| %>
 
 	<%= f.label :name %>

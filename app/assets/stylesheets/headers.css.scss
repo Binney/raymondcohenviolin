@@ -2,6 +2,40 @@
 
 /* header */
 
+.wide-section {
+  width: 100%;
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.container-header {
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+.header-nav {
+  background-color: $burgundy;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.homepage-box {
+  background-color: $burgundy;
+  padding-top: 75px;
+  padding-bottom: 20px;
+}
+
+.page-title {
+  background-color: $cinnabar;
+}
+
+.player {
+  background-color: $tangerine;
+}
+
 #logo {
   float: left;
   margin-right: 10px;
@@ -17,4 +51,3 @@
     text-decoration: none;
   }
 }
-

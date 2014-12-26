@@ -1,8 +1,22 @@
-<li class="album album-wrapper">
+<li class="album">
+<div class="row">
+  <div class="col-md-4">
 	<%= link_to album do %>
-		<span class="album-name">
-			<%= album.name %>
-		</span>
 		<%= image_tag cover_for(album), size: "150x150", alt: album.name %>
 	<% end %>
+  </div>
+  <div class="col-md-8">
+	<div class="">
+		<h2><%= album.name %></h2>
+		<p>TODO composer here<br>
+			<%= album.description %><br>
+			<ol>
+				<% album.songs.each do |song| %>
+					<li><%= song.title %></li>
+				<% end %>
+			</ol>
+		</p>
+	</div>
+  </div>
+</div>
 </li>

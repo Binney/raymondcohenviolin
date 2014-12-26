@@ -1,5 +1,6 @@
 class AlbumsController < ApplicationController
 	before_action :authenticate, only: [:manage, :new, :edit, :destroy]
+	before_action :disable_container, only: :index
 
 	def new
 		@album = Album.new

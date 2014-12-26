@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title><%= yield :title %></title>
+  <title><%= full_title(yield :title ) %></title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
@@ -10,13 +10,29 @@
 </head>
 <body>
 
-  <div class="container">
-  <%= render 'layouts/header' %>
-    <% flash.each do |key, value| %>
-      <div class="alert alert-<%= key %>"><%= value %></div>
-    <% end %>
+  <% if @homepage %>
+    <%= render 'layouts/homepage_header' %>
+  <% else %>
+    <%= render 'layouts/header' %>
+
+    <div class="container">
+      <% flash.each do |key, value| %>
+        <div class="alert alert-<%= key %>"><%= value %></div>
+      <% end %>
+    </div>
+
+    <%= render 'layouts/page_title', title: (yield :title) unless @disable_title %>
+  <% end %>
+
+  <% unless @disable_container %>
+    <div class="container">
+      <%= yield %>
+    </div>
+  <% else %>
     <%= yield %>
-  	<%= render 'layouts/footer' %>
-  </div>
+  <% end %>
+
+  <%= render 'layouts/footer' %>
+
 </body>
 </html>

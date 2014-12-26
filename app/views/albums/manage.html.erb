@@ -1,7 +1,5 @@
 <% provide :title, "Manage music" %>
 
-<h1>Manage music</h1>
-
 <%= button_to "New album", new_album_path, method: 'get', class: "btn btn-large btn-primary" %>
 
 <% if @albums.any? %>

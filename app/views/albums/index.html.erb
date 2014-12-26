@@ -1,15 +1,23 @@
 <% provide :title, "Music" %>
 
-<h1>Music</h1>
+<%= render 'layouts/player' %>
+
+<div class="container">
 
 <% if @albums.any? %>
 	
+	<%= will_paginate @albums %>
+
 	<ul class="albums">
 		<%= render @albums %>
 	</ul>
+
+	<%= will_paginate @albums %>
 
 <% else %>
 
 	No albums found.
 
 <% end %>
+
+</div>

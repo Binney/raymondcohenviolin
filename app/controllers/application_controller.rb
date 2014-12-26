@@ -6,7 +6,11 @@ class ApplicationController < ActionController::Base
 	def authenticate
 		authenticate_or_request_with_http_basic do |username, password|
 			username == "anthya" && password == "symphony"
-			end
+		end
 	end
-	
+
+	def disable_container
+		@disable_container = true
+	end
+
 end
