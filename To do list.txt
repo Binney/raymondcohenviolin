@@ -1,10 +1,12 @@
 To do list
 ==========
 
-Add Paperclip upload to music and pictures
+Thumbnail versions of images
+Upload album covers?
 Add a fancier music player?
 Add image gallery fanciness
 Ensure the whole thing works on a tablet/mobile
+
 
 Brief
 =====
