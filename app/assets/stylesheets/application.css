@@ -9,8 +9,9 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require_self
+ *= require_tree
  */
-@import "colours.css.scss";
+/*@import "colours.css.scss";
 @import "typography.css.scss";
 @import "general.css.scss";
 @import "headers.css.scss";
@@ -18,4 +19,4 @@
 @import "songs.css.scss";
 @import "albums.css.scss";
 @import "pictures.css.scss";
-@import "static_pages.css.scss";
+@import "static_pages.css.scss";*/
