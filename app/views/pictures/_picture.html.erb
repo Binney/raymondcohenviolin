@@ -1,1 +1,3 @@
-<li class="picture"><%= image_tag picture.image.url(:full), alt: "Image" %></li>
+<li class="picture"><%= link_to picture do %>
+<%= image_tag picture.image.url, alt: "Image" %>
+<% end %></li>

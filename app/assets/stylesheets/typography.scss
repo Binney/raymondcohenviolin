@@ -47,6 +47,14 @@ a {
 	color: $burgundy;
 	&:hover {
 		text-decoration: none;
+		color: $tangerine;
+	}
+	&:selected {
+		text-decoration: none;
+		color: $cinnabar;
+	}
+	&:visited {
+		text-decoration: none;
 		color: $cinnabar;
 	}
 }

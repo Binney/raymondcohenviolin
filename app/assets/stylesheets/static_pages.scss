@@ -19,6 +19,23 @@
 	background-color: $cinnabar;
 }
 
-.gallery-preview li {
-	display: inline;
+.gallery-preview {
+	border-top: 1px solid $burgundy;
+	padding-top: 50px;
+	li {
+		display: inline;
+	}
+}
+
+.picture-preview {
+	margin-left: 0;
+	line-height: 170px;
+}
+
+.gallery-view-link {
+text-align: right;
+}
+
+.thumbnail-picture {
+	padding-right: 20px;
 }

@@ -4,68 +4,13 @@
 
 .albums li {
   list-style:none;
+  padding-top: 25px;
+  padding-bottom: 25px;
   border-bottom: 1px solid $burgundy;
-  /*display: inline-block;
-  line-height: 150px;*/
 }
 
-/*.album_wrapper {
-  position: relative;
-  padding: 30px;
-  display: block;
-  width: 150px;
-  height: 150px;
-  line-height: 30px;
-  text-align: center;
+.tracklist li {
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border: none;
 }
-.album_name {
-  line-height: 30px;
-  display: inline-block;
-  vertical-align: middle;
-  position: absolute;
-  color:#000;
-  text-transform: uppercase;
-  font-size: 20px;
-  font-weight: bold;
-  background-color:rgba(255,255,255,0.25);
-  width: 150px;
-  height: 150px;
-  text-align: center;
-  z-index: 30;
-  opacity: 0;
-}.album_name:hover {
-  opacity:1;
-}
-
-.tags_select {
-  list-style-type: none;
-  display: inline;
-  -moz-column-count: 3;
-  -webkit-column-count: 3;
-  column-count: 3;
-}
-
-.song-field {
-	background-color: #eaeaea;
-	padding: 25px;
-	padding-left: 40px;
-	margin-bottom: 50px;
-}
-
-.album-manage {
-	width: 100%;
-}
-
-.album-cover {
-	float: left;
-}
-
-.album-options {
-	float: right;
-}
-
-.album-tracklist {
-	float: left;
-	line-height: 20px;
-	list-style-type: circle;
-}*/

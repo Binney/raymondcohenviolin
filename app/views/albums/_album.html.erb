@@ -1,16 +1,16 @@
 <li class="album">
 <div class="row">
-  <div class="col-md-4">
+  <div class="col-md-3">
 	<%= link_to album do %>
 		<%= image_tag cover_for(album), size: "150x150", alt: album.name %>
 	<% end %>
   </div>
-  <div class="col-md-8">
+  <div class="col-md-9">
 	<div class="">
 		<h2><%= album.name %></h2>
 		<p>TODO composer here<br>
 			<%= album.description %><br>
-			<ol>
+			<ol class="tracklist">
 				<% album.songs.each do |song| %>
 					<li><%= song.title %></li>
 				<% end %>

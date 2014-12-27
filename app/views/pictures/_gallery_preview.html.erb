@@ -4,13 +4,13 @@
 
 	<div class="gallery-preview">
 		<ul class="picture-preview">
-			<% @pictures.each.do |picture| %>
+			<% @pictures.each do |picture| %>
 				<%= render 'pictures/picture_thumb', picture: picture %>
 			<% end %>
 		</ul>
 	</div>
 
-	<p><%= link_to "View gallery >", gallery_path %></p>
+	<h2 class="gallery-view-link"><%= link_to "View gallery >", gallery_path %></h2>
 
 </div>
 

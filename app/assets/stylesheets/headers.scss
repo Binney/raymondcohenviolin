@@ -47,7 +47,15 @@
   font-weight: bold;
   line-height: 1;
   &:hover {
-    color: white;
+    color: $tangerine;
     text-decoration: none;
+  }
+}
+
+.site-nav a {
+  text-shadow: none;
+  color: white;
+  &:hover {
+    color: $tangerine;
   }
 }
