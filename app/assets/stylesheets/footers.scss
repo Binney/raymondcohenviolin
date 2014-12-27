@@ -1,0 +1,33 @@
+@import "colours.scss";
+
+/* footer */
+
+footer {
+  background-color: $cinnabar;
+  margin-top: 45px;
+  padding-top: 5px;
+  color: #eaeaea;
+  a {
+    color: #eaeaea;
+    &:hover { 
+      color: #eaeaea;
+    }
+  }  
+  small { 
+    float: left; 
+  }
+  ul {
+    float: right;
+    list-style: none;
+    li {
+      float: left;
+      margin-left: 10px;
+    }
+  }
+}
+
+.container-footer {
+  border-top: 1px solid white;
+  margin-top: 50px;
+  padding-top: 10px;
+}

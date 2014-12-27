@@ -6,7 +6,8 @@ Upload album covers?
 Add a fancier music player?
 Add image gallery fanciness
 Ensure the whole thing works on a tablet/mobile
-
+Some font ideas: Caudex, Lora, Noto Serif, Gentium Basic, Libre Baskerville, Droid Serif, Merriweather, Alegreya
+Song ordering within albums (enforced by column)
 
 Brief
 =====

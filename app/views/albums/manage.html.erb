@@ -1,5 +1,7 @@
 <% provide :title, "Manage music" %>
 
+<div class="container">
+
 <%= button_to "New album", new_album_path, method: 'get', class: "btn btn-large btn-primary" %>
 
 <% if @albums.any? %>
@@ -15,3 +17,5 @@
 	No albums found.
 
 <% end %>
+
+</div>

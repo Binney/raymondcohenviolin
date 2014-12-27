@@ -1,32 +1,43 @@
 <% provide :title, "Home" %>
 
-<%= render 'layouts/player' %>
-
 <div class="container">
 
-<p>This is the homepage of Raymond Cohen's website.<br>
+	<h2 class="homepage-nav">| <%= link_to "LIFE", biography_path, class: "homepage-link" %> | 
+		<%= link_to "MUSIC", music_path, class: "homepage-link" %> | 
+		<%= link_to "GALLERY", gallery_path, class: "homepage-link" %> |</h2>
 
-Welcome! This site is very much still a work in progress. If you're interested in the project do <%= link_to "contact us", contact_path %>.</p>
+</div>
 
-<div class="row">
+<div class="splash-image">
+	<span class="splash-cinnabar"></span>
+	<div class="container"><%= image_tag "https://s3-eu-west-1.amazonaws.com/binneybucket/images/Homepage/homepage_pic.png", alt: "Raymond Cohen" %></div>
+</div>	
 
-	<div class="col-md-4">
-		<%= link_to "Life", biography_path %><br>
-		<p>edfg edf rdfvgb fvb njhg rfgh jhgf def hbgf df ss</p>
-	</div>
+<%= render 'layouts/player' %>
 
-	<div class="col-md-4">
-		<%= link_to "Music", music_path %><br>
-		<p>edfg edf rdfvgb fvb njhg rfgh jhgf def hbgf df ss</p>
+<div class="container container-fluid">
 
-	</div>
+	<div class="row">
 
-	<div class="col-md-4">
-		<%= link_to "Gallery", gallery_path %><br>
-		<p>edfg edf rdfvgb fvb njhg rfgh jhgf def hbgf df ss</p>
+		<div class="col-md-4">
+			<h2><%= link_to "Life", biography_path %></h2>
+			<p>Raymond Cohen was a professional classical violinist born in Manchester in 1919. <%= link_to "Read more >", biography_path %></p>
+		</div>
+
+		<div class="col-md-4">
+			<h2><%= link_to "Music", music_path %></h2>
+			<p>This site is home to many hours of recordings of Raymond's music, from Brahms to Borodin and much more. <%= link_to "Read more >", music_path %></p>
+
+		</div>
+
+		<div class="col-md-4">
+			<h2><%= link_to "About", about_path %></h2>
+			<p>This site was created by Anthya Cohen, Raymond's wife, to share his music with the world. <%= link_to "Read more", about_path %></p>
+
+		</div>
 
 	</div>
 
 </div>
 
-</div>
+<%= render "pictures/gallery_preview" %>

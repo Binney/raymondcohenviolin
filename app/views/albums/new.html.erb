@@ -1,5 +1,7 @@
 <% provide :title, "New album" %>
 
+<div class="container">
+
 <%= nested_form_for @album do |f| %>
 
 	<%= f.label :name %>
@@ -20,3 +22,5 @@
 	<%= f.submit "Create", class: "btn btn-large btn-primary" %>
 
 <% end %>
+
+</div>

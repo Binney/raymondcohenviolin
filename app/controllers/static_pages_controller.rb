@@ -2,7 +2,7 @@ class StaticPagesController < ApplicationController
 
 	def home
 		@homepage = true
-		@disable_container = true
+		@pictures = Picture.all.order('created_at DESC')[0..4]
 	end
 
 	def about

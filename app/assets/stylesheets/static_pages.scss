@@ -1,0 +1,24 @@
+@import "colours.scss";
+
+/* Homepage */
+
+.homepage-nav {
+	text-align: center;
+}
+
+.homepage-link {
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+.splash-cinnabar {
+	width: 100%;
+	height: 125px;
+	z-index: -1000;
+	position: absolute;
+	background-color: $cinnabar;
+}
+
+.gallery-preview li {
+	display: inline;
+}

@@ -1,5 +1,7 @@
 <% provide :title, @album.name %>
 
+<div class="container">
+
 <% if @album.songs.any? %>
 	<ul class="songs">
 		<%= render @album.songs %>
@@ -7,3 +9,5 @@
 <% else %>
 	No songs found.
 <% end %>
+
+</div>

@@ -1,0 +1,15 @@
+<% if @pictures.any? %>
+
+<div class="container">
+
+	<div class="gallery-preview">
+		<ul class="picture-preview">
+			<%= render @pictures %>
+		</ul>
+	</div>
+
+	<p><%= link_to "View gallery >", gallery_path %></p>
+
+</div>
+
+<% end %>

@@ -1,5 +1,6 @@
 <div class="wide-section player">
 	<div class="container">
-		<p>Now playing: <span class="">A Piece of Music TODO in F minor</span></p>
+		<audio controls="controls" ><source src="<%= @song.track.url %>" type="audio/mpeg"></audio>
+		<p>Now playing: <span class=""><%= @song.title %> from <%= @song.album.name %></span></p>
 	</div>
 </div>

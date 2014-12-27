@@ -1,5 +1,5 @@
 <li class="song">
-<h3><%= song.title %> | <%= link_to "Download", song.track.url, download: song.title %></h3>
-<audio controls="controls" ><source src="<%= song.track.url %>" type="audio/mpeg"></audio>
-<p><%= song.description %></p>
+	<h3><%= song.title %> | <%= link_to "Download", song.track.url, download: song.title %></h3>
+	<audio controls="controls" ><source src="<%= song.track.url %>" type="audio/mpeg"></audio>
+	<p><%= song.description %></p>
 </li>

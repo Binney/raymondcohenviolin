@@ -2,6 +2,7 @@
 <html>
 <head>
   <title><%= full_title(yield :title ) %></title>
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
@@ -24,13 +25,7 @@
     <%= render 'layouts/page_title', title: (yield :title) unless @disable_title %>
   <% end %>
 
-  <% unless @disable_container %>
-    <div class="container">
-      <%= yield %>
-    </div>
-  <% else %>
-    <%= yield %>
-  <% end %>
+  <%= yield %>
 
   <%= render 'layouts/footer' %>
 
