@@ -16,13 +16,14 @@
   <% else %>
     <%= render 'layouts/header' %>
 
+    <%= render 'layouts/page_title', title: (yield :title) unless @disable_title %>
+
     <div class="container">
       <% flash.each do |key, value| %>
         <div class="alert alert-<%= key %>"><%= value %></div>
       <% end %>
     </div>
 
-    <%= render 'layouts/page_title', title: (yield :title) unless @disable_title %>
   <% end %>
 
   <%= yield %>

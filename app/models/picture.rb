@@ -1,6 +1,10 @@
 class Picture < ActiveRecord::Base
 	has_attached_file :image,   # TODO ought to have a proper size/style hash here? 
 		storage: :s3,
+		styles: {
+				thumb: '940x150>',
+				full: '2000x2000>'
+			},
 		path: ":attachment/:id/:style.:extension",
   		bucket: "binneybucket",
   		s3_credentials: { bucket: ENV['S3_BUCKET_NAME'],

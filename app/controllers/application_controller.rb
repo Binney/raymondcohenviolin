@@ -15,7 +15,7 @@ class ApplicationController < ActionController::Base
 	end
 
 	def default_music
-		@song = Song.first(offset: Random.rand(Song.count))
+		@song = Song.find_by(title: "II: Andante tranquillo")
 	end
 
 end

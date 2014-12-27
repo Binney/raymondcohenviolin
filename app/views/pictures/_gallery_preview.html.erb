@@ -4,7 +4,9 @@
 
 	<div class="gallery-preview">
 		<ul class="picture-preview">
-			<%= render @pictures %>
+			<% @pictures.each.do |picture| %>
+				<%= render 'pictures/picture_thumb', picture: picture %>
+			<% end %>
 		</ul>
 	</div>
 
