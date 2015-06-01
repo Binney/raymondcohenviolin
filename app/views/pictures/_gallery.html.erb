@@ -1,0 +1,15 @@
+<script>
+    Galleria.run('.galleria', {responsive:true,height:0.5625});
+</script>
+
+<% if @pictures.any? %>
+
+	<div class="galleria">
+	    <%= render @pictures %>
+	</div>
+
+<% else %>	
+
+	No pictures found.
+
+<% end %>

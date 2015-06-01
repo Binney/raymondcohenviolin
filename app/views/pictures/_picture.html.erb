@@ -1,3 +1,1 @@
-<li class="picture"><%= link_to picture do %>
-<%= image_tag picture.image.url, alt: "Image" %>
-<% end %></li>
+<%= image_tag picture.image.url, alt: "Image", data: {title: picture.description, description: " "} %>

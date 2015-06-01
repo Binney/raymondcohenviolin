@@ -6,11 +6,11 @@ footer {
   background-color: $cinnabar;
   margin-top: 45px;
   padding-top: 5px;
-  color: #eaeaea;
+  color: white;
   a {
-    color: #eaeaea;
+    color: white;
     &:hover { 
-      color: #eaeaea;
+      color: $tangerine;
     }
   }  
   small { 
@@ -30,4 +30,9 @@ footer {
   border-top: 1px solid white;
   margin-top: 50px;
   padding-top: 10px;
+}
+
+.footer-main-nav {
+  margin-top: -20px;
+  margin-bottom: 50px;
 }

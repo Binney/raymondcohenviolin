@@ -1,17 +1,3 @@
 <% provide :title, "Gallery" %>
 
-<div class="container">
-
-<% if @pictures.any? %>
-	
-	<ul class="gallery">
-		<%= render @pictures %>
-	</ul>
-
-<% else %>
-
-	No pictures found.
-
-<% end %>
-
-</div>
+<%= render "gallery" %>

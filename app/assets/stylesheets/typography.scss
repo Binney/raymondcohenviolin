@@ -14,7 +14,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-	font-weight: 600;
+	font-weight: normal;
 	font-size: 3em;
 	letter-spacing: -2px;
 	margin-bottom: 30px;
@@ -57,4 +57,8 @@ a {
 		text-decoration: none;
 		color: $cinnabar;
 	}
+}
+
+.emph {
+	line-height: 1.5;
 }

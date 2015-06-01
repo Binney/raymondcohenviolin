@@ -1,16 +1,23 @@
 <% provide :title, "Home" %>
 
-<div class="container">
-
-	<h2 class="homepage-nav">| <%= link_to "LIFE", biography_path, class: "homepage-link" %> | 
-		<%= link_to "MUSIC", music_path, class: "homepage-link" %> | 
-		<%= link_to "GALLERY", gallery_path, class: "homepage-link" %> |</h2>
-
-</div>
-
 <div class="splash-image">
 	<span class="splash-cinnabar"></span>
-	<div class="container"><%= image_tag "https://s3-eu-west-1.amazonaws.com/binneybucket/images/Homepage/homepage_pic.png", alt: "Raymond Cohen" %></div>
+	<div class="container"><% image_tag "https://s3-eu-west-1.amazonaws.com/binneybucket/images/Homepage/homepage_pic.png", alt: "Raymond Cohen" %></div>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-4 splash-bio">
+				<h2 class="emph"><br>This website contains the broadcast and recording legacy of Raymond Cohen’s  long life (1919-2011) in music.
+<br>
+Here is a short biography of Raymond Cohen with an introduction to this website and why it exists.
+<!--It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair, we had everything before us, we had nothing before us, we were all going direct to Heaven, we were all going direct the other way— in short, the period was so far like the present period, that some of its noisiest authorities insisted on its being received, for good or for evil, in the superlative degree of comparison only.-->
+
+
+</h2>
+			</div><div class="col-lg-8">
+				<%= image_tag "Violin_cutout.png", alt: "Raymond Cohen", size: "563x652" %>
+			</div>
+		</div>
+	</div>
 </div>	
 
 <%= render 'layouts/player' %>
@@ -32,7 +39,7 @@
 
 		<div class="col-md-4">
 			<h2><%= link_to "About", about_path %></h2>
-			<p>This site was created by Anthya Cohen, Raymond's wife, to share his music with the world. <%= link_to "Read more", about_path %></p>
+			<p>This site was created by Anthya Cohen, Raymond's wife, to share his music with the world. <%= link_to "Read more >", about_path %></p>
 
 		</div>
 
@@ -40,4 +47,10 @@
 
 </div>
 
-<%= render "pictures/gallery_preview" %>
+<div class="container">
+
+	<%= render "pictures/gallery" %>
+
+	<%= link_to "View gallery >", gallery_path %>
+
+</div>

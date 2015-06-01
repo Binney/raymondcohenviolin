@@ -6,8 +6,19 @@ Upload album covers?
 Add a fancier music player?
 Add image gallery fanciness
 Ensure the whole thing works on a tablet/mobile
-Some font ideas: Caudex, Lora, Noto Serif, Gentium Basic, Libre Baskerville, Droid Serif, Merriweather, Alegreya
 Song ordering within albums (enforced by column)
+
+Playing song when you load site (picked at random?)
+Images in different categories: albums? then can describe album and sort by album
+Music by orchestra, conductor, date
+Dropdown menus on header nav for albums
+Sans font? more lightweight - definitely change title font!
+"About this site" box between picture and player on homepage with links to "videos" and "music" and so on
+Search box on homepage
+"More musical" styling (staves? musical notation decoration?!)
+
+Embedded YouTube videos
+Image gallery slideshow!! On homepage, have a slideshow of the pictures of Raymond and Anthya from "comic strip" picture
 
 Brief
 =====
@@ -15,7 +26,7 @@ Brief
 Music: upload from CD
 List by concerto/sonata/... a la albums
 Photographs in a gallery 
-Timeline linking into pictures and music
+Timeline linking into pictures and music??
 Past news articles + letters to papers
 About The Site page
 Biography (+timeline)
