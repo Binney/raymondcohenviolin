@@ -15,6 +15,6 @@
 //= require bootstrap
 //= require turbolinks
 //= require jquery_nested_form
-//= require galleria-1.4.2
-//= require galleria.classic
+//= require galleria-1.4.2.min
+//= require galleria.classic.min
 //= require_tree .
