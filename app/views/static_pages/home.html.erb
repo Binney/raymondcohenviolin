@@ -1,11 +1,11 @@
 <% provide :title, "Home" %>
 
 <div class="splash-image">
-	<span class="splash-cinnabar"></span>
-	<div class="container"><% image_tag "https://s3-eu-west-1.amazonaws.com/binneybucket/images/Homepage/homepage_pic.png", alt: "Raymond Cohen" %></div>
+	<span class="splash-brahms"></span>
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-4 splash-bio">
+				<div class="hackity-hack" ></div>
 				<h2 class="emph"><br>This website contains the broadcast and recording legacy of Raymond Cohen’s  long life (1919-2011) in music.
 <br>
 Here is a short biography of Raymond Cohen with an introduction to this website and why it exists.
@@ -13,8 +13,9 @@ Here is a short biography of Raymond Cohen with an introduction to this website 
 
 
 </h2>
-			</div><div class="col-lg-8">
-				<%= image_tag "Violin_cutout.png", alt: "Raymond Cohen", size: "563x652" %>
+			</div>
+			<div class="col-lg-8">
+				<%= image_tag "Violin_cutout.png", alt: "Raymond Cohen", size: "563x652", class: "splash-portrait" %>
 			</div>
 		</div>
 	</div>
@@ -22,7 +23,7 @@ Here is a short biography of Raymond Cohen with an introduction to this website 
 
 <%= render 'layouts/player' %>
 
-<div class="container container-fluid">
+<div class="container container-fluid homepage-links">
 
 	<div class="row">
 
@@ -47,10 +48,12 @@ Here is a short biography of Raymond Cohen with an introduction to this website 
 
 </div>
 
+<div class="homepage-gallery">
 <div class="container">
 
 	<%= render "pictures/gallery" %>
 
-	<%= link_to "View gallery >", gallery_path %>
+	<h2 class="gallery-view-link"><%= link_to "View gallery >", gallery_path %></h2>
 
+</div>
 </div>
